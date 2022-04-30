@@ -1,0 +1,127 @@
+
+.main-container {
+    width: 1253px;
+    height: 100vh;
+}
+
+video {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/*imágen y titulo*/
+.caja1 {
+    width: 1253px;
+    height: 80px;
+    float: left;
+    font-family: Montserrat;
+}
+
+.imagen {
+    margin: 40px 0 0 80px;
+    display: inline-block;
+}
+.titulo {
+    font-size: 30px;
+    display: inline-block;
+    padding: 5px;
+    margin: 0 0 0 440px;
+    background: #ADBBBF;
+    opacity: 0.5;
+    border-radius: 5px;
+}
+
+/*Cajas*/
+.caja2, .caja3 {
+    height: 370px;
+    float: left;
+}
+
+.caja2{
+    width: 703px;
+}
+
+.caja3 {
+    width: 550px; 
+}
+
+/*area te texto, advertencia y botones*/
+#area-texto, #area-texto2 {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+    background: #ADBBBF;
+    opacity: 0.5;
+    border-radius: 15px;
+    font-family: Montserrat;
+}
+
+#area-texto {
+    width: 530px;
+    height: 200px;
+    margin: 40px 40px 10px 130px;
+}
+
+#area-texto2 {
+    width: 460px;
+    height: 230px;
+    margin: 40px 40px 0 20px;
+}
+
+.advertencia {
+    font-family: Montserrat;
+    font-size: 17px;
+    padding: 10px;
+    margin: 10px 0 5px 260px;
+}
+
+.botonEncriptar, .botonDesencriptar, .botonCopiar {
+    width: 185px;
+    height: 67px;
+    border-radius: 5px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: 1s all;
+}
+
+.botonEncriptar {
+    margin: 20px 30px 10px 190px;
+    background: #5F915D;
+    display: inline;
+}
+
+.botonDesencriptar {
+    background: #265D62;
+}
+
+.botonCopiar {
+    width: 248px;
+    background: #5F915D;
+    margin: 16px 0 30px 120px;
+}
+
+.botonEncriptar:hover, .botonDesencriptar:hover, .botonCopiar:hover {
+    transform: scale(1.2);
+    background: #8a8a8d;
+}
+
+/*pie de página*/
+.caja4 {
+    width: 1259px;
+    height: 130px;
+    font-size: 15px;
+    text-align: center;
+    float: left;
+    background: #ADBBBF;
+    opacity: 0.5;
+    margin-top: 30px;
+}
