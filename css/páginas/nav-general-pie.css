@@ -1,0 +1,55 @@
+body{
+    background: linear-gradient(180grad, #7CD5F0, rgb(238, 240, 241));
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    justify-content: flex-end;
+}
+.btn-ingresar, .btn-registrar{
+    cursor:pointer;
+    background:#0B7C83;
+    width: 8rem;
+    font-size:1.2rem;
+    border-radius: 1.5rem;
+    border: none;
+    padding: .5rem;
+    margin-right: 1rem;
+    color: aliceblue;
+}
+.btn-ingresar:hover, .btn-registrar:hover{
+    background: linear-gradient(180grad, #6e62ef, rgb(72, 168, 216));
+    color: aliceblue;
+    font-weight: 600;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
+    transform:scale(1.1);
+	cursor: pointer;
+}
+
+.titulo_principal{
+    font-family: Pacifico, cursive;
+    color:#fdfdfd;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
+}
+
+#rodapie{
+    margin-top: 2rem;
+    background: #7CD5F0;  
+    text-align: center;
+    padding-bottom: .5rem;
+}
+.rodapie-img{
+    width: 8%;
+}
+.rodapie-texto{
+    font-weight: 600;
+    line-height: 1.3rem;
+
+}

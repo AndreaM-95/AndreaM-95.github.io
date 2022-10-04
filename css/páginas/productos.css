@@ -1,0 +1,117 @@
+.titulo{
+    font-family: Pacifico, cursive;
+    color:#fdfdfd;
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
+
+}
+
+.lead{
+    font-weight: 600;
+    font-family: Pacifico, cursive;
+    text-decoration: underline rgb(23, 169, 177);
+    
+}
+
+#lista-productos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+.panel{
+    background:#1196a0;
+    height: 4.5rem;
+}
+
+.slogan{
+    background:#B4EAEC;
+    border:none;
+    font-weight: 600;  
+    font-family: Pacifico, cursive;
+    margin-left: 2rem;
+    border-radius: 1rem;
+    padding: 0 .5rem 0 .5rem;
+    height: 2.5rem;
+    font-family: 1.2rem;
+}
+
+.btn-salir{
+    margin: 0 2.5rem 0 0;
+    border-radius: 1rem;
+    width: 6rem;
+    height: 3rem;
+    background:#B4EAEC;
+    border:none;
+    font-weight: 600;
+    font-size: 1.3rem;
+    
+}
+.btn-salir:hover, .slogan:hover{
+    background: linear-gradient(180grad, #6e62ef, rgb(72, 168, 216));
+    color: aliceblue;
+    font-weight: 600;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
+    transform:scale(1.1);
+    cursor: pointer;
+}
+
+.carro:hover{
+    border-radius: 1rem;
+    transform:scale(1.1);
+    cursor: pointer;
+    background:#B4EAEC;
+
+}
+
+.my-0{
+    color: #F0FEFF;
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
+
+}
+
+.img-card{
+    width: 30%;
+    text-align: center;
+    padding-bottom: 1rem;
+    border: solid #0B7C83;
+    background: #F0FEFF;
+    border-radius: .4rem .4rem 2rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.contenedor{
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-producto{
+    background: linear-gradient(180grad, #6e62ef, rgb(72, 168, 216));
+    margin-bottom: .5rem;
+}
+
+.agregar-carrito:hover{
+    background: linear-gradient(180grad, #6e62ef, rgb(72, 168, 216));
+    color: aliceblue;
+    font-weight: 600;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
+    transform:scale(1.1);
+	cursor: pointer;
+}
+
+.precio{
+    font-weight: 600;
+}
+
+
+.table{
+    width: 350px;
+    text-align: center;
+}
+
+.btn-carro{
+    margin-left: 1rem;
+}

@@ -1,0 +1,26 @@
+.btn-scrolltop{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: .5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transform: scale(0);
+    transition: .3s;
+}
+
+.btn-scrolltop-on{
+    transform: scale(1);
+}
+
+.fa-circle-arrow-up:before{
+    color: #6729A5;
+    font-size: 3rem;
+}
+
+@media (max-width:768px){
+    .fa-circle-arrow-up:before{
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,132 @@
+
+.titulo-compra{
+    font-family: Pacifico, cursive;
+    font-size: 2.3rem;
+    text-align: center;
+    padding-top: 2rem;
+    font-weight: 600;
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
+    color: #F99E77;
+}
+.box-cuenta{
+    align-items: center;
+    display: flex;
+    background: linear-gradient(180grad, #6e62ef, rgb(72, 168, 216));
+    border-radius: 2rem;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
+}
+#procesar-pago{    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.datos-user{
+    width: 90%;
+    margin: .5rem 0 .5rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3rem;
+    color: #fff;
+    
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
+
+}
+
+.label{
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+   
+}
+
+.input{
+    width: 80%;
+    height: 2rem;
+    margin: 0;
+}
+.tabla-box{
+    width: 70%;
+    background: rgb(236, 232, 232);
+}
+ .table{
+    border: solid black;
+}
+.fila-box{
+    width: 16%;
+    background-color: #0B7C83;
+    color: #fff;
+    
+}
+
+.fila-dato{
+ 
+    border: solid black;
+    text-align: center;
+    
+    font-size: 1.1rem;
+}
+
+
+.fila-suma{
+    border: solid black;
+    text-align: center;
+
+}
+
+#total{
+    background: rgb(236, 232, 232);
+
+    text-align: center;
+    font-weight: 600;
+}
+
+.botones-box{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 1rem;
+    width: 70%;
+}
+
+.box-btn{
+    align-items: center;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+
+.btn-compra{
+    cursor:pointer;
+    background:#2EE1D4;
+    width: 200px;
+    font-size:1.2rem;
+    border-radius: 1.5rem;
+    border: none;
+    height: 3rem;
+    padding: .5rem;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
+    text-decoration: none;
+    color: black;
+}
+.btn-compra:hover{
+    background: linear-gradient(180grad, #3FECF3, rgb(101, 110, 114));
+    color: aliceblue;
+    font-weight: 600;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
+    transform:scale(1.1);
+	cursor: pointer;
+}
+
+#cargando{
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+#lista-compra{
+    margin: 0;
+}

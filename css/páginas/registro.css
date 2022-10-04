@@ -1,0 +1,67 @@
+/*todo || Caja del contenedor principal || */
+.di{
+    display: flex;
+}
+
+/*todo || Caja del contenedor del formulario || */
+#formulario-box{
+    width: 50%;
+}
+
+/*todo || Caja del formulario || */
+.form-box{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    border: black solid;
+    border-radius: 2rem;
+    align-items: center;
+    background: #68cbe9;
+}
+
+/*todo || Label || */
+.info{
+    text-align: center;
+    font-size: 1.2rem;
+    padding: .5rem 0 .5rem 0;
+    font-weight: 600;
+}
+
+/*todo || Input || */
+.datos{
+    width: 90%;
+    border-radius: 2rem;
+    height: 3rem;
+    border: none;
+    padding: .5rem 1rem .5rem 1rem;
+    font-size: 1.1rem;
+}
+
+/*todo || Botón || */
+.btn{
+    margin: 1rem 0 1rem 0;
+    font-size: 1.2rem;
+    background:#0B7C83;
+    color: aliceblue;
+    font-weight: 600;
+}
+.btn:hover{
+    background: linear-gradient(180grad, #6e62ef, rgb(72, 168, 216));
+    color: aliceblue;
+    font-weight: 600;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
+    transform:scale(1.1);
+	cursor: pointer;
+}
+
+/*todo || Imágen banner || */
+.banner_img{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.banner_img img{
+    animation: movimiento 3s  infinite;
+    width: 450px;
+    height: 450px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/páginas/reset.css">
+        
+        <title>Registrarse</title>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+        <link rel="icon" href="./multimedia/imagenes/favicon.ico"/>
+
+        <link rel="stylesheet" href="css/páginas/nav-general-pie.css">
+        <link rel="stylesheet" href="css/páginas/registro.css">
+        <link rel="stylesheet" href="css/páginas/burbujas.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md ">
+            <a href="index.html"><button class="btn-ingresar">Ingresar</button></a>
+            <a href="registro.html"><button class="btn-registrar">Registrarse</button></a>
+        </nav>
+        
+        <div class="di">
+            <div id="formulario-box">
+                <h2 class="titulo_principal">Tentación Arte-Sana</h2>
+                <form class="form-box" onsubmit="registroUser()">
+                    <label class="info" for="name">Nombre completo</label>
+                    <input id="name" class="datos" type="text" name="name" placeholder="&#128100; Texto aquí">
+
+                    <label class="info" for="email">Correo electrónico</label>
+                    <input id="email" class="datos" type="email" name="email" placeholder="&#128231; Texto aquí">
+
+                    <label class="info" for="username"> Usuario</label>
+                    <input id="username" class="datos" type="text" name="username" placeholder="&#128100; Texto aquí">
+
+                    <label class="info" for="password">Contraseña</label>
+                    <input id="password" class="datos" type="password" name="password" placeholder="&#8265; Texto aquí">
+
+                    <button  type="button" class="btn">Registrarse</button>
+                </form>
+            </div>
+            <div class="banner_img">
+                <img src="multimedia/imagenes/ensalada.png">
+            </div>
+        </div>
+        <div class="burbujas">
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+        </div>
+        
+        <footer id="rodapie">
+            <img class="rodapie-img" src="multimedia/imagenes/logo.png">
+            <p class="rodapie-texto"><strong>Andrea Mejia - 2022</strong> </p>
+            <p class="rodapie-texto"><strong>&copy Copyright</strong></p>
+        </footer>
+    </body>
+    <script src="js/registrar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>

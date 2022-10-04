@@ -1,0 +1,60 @@
+/*todo || Caja del contenedor principal || */
+.di{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/*todo || Caja del contenedor del formulario || */
+.form-box{
+    width: 40%;
+    border: solid black;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0 2rem 0;
+    border-radius: 3rem;
+    padding: 1rem 2rem 1rem 2rem;
+    background: #68cbe9;
+}
+
+/*todo || Saludo || */
+.texto{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/*todo || Label || */
+.info{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: .5rem 0 .5rem 0;
+}
+
+/*todo || Input || */
+.dato{
+    font-size: 1.2rem;
+    padding: .5rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+/*todo || Botón || */
+.btn-login{
+    margin: 1rem 0 0 35%;
+    border-radius: 1rem;
+    width: 30%;
+    height: 3rem;
+    background:#0B7C83;
+    color: aliceblue;
+    border:none;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.btn-login:hover{
+    background: linear-gradient(180grad, #6e62ef, rgb(72, 168, 216));
+    color: aliceblue;
+    font-weight: 600;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
+    transform:scale(1.1);
+	cursor: pointer;
+}

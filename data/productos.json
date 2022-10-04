@@ -1,0 +1,56 @@
+[
+	{
+		"id": 1,
+		"marca": "Batido de aguacate",
+		"imagen": "img/BatidoAguacate.jpg",
+		"precio": "8000"
+	},
+	{
+		"id": 2,
+		"marca": "Batido de fresa",
+		"imagen": "img/BatidoFresa.jpg",
+		"precio": "10000"
+	},
+	{
+		"id": 3,
+		"marca": "Batido verde",
+		"imagen": "img/batidoVerde.jpg",
+		"precio": "6000"
+	},
+	{
+		"id": 4,
+		"marca": "Ensalada César",
+		"imagen": "img/EnsaladaCesar.jpg",
+		"precio": "6000"
+	},
+	{
+		"id": 5,
+		"marca": "Granóla",
+		"imagen": "img/granola.jpg",
+		"precio": "20000"
+	},
+	{
+		"id": 6,
+		"marca": "Mix de frutos secos",
+		"imagen": "img/mixFrutos.jpg",
+		"precio": "15000"
+	},
+	{
+		"id": 7,
+		"marca": "Aceite de coco",
+		"imagen": "img/aceiteCoco.jpg",
+		"precio": "18000"
+	},
+	{
+		"id": 8,
+		"marca": "Aceite de aguacate",
+		"imagen": "img/aceiteAguacate.jpg",
+		"precio": "23000"
+	},
+	{
+		"id": 9,
+		"marca": "Sirope de agave",
+		"imagen": "img/sirope.jpg",
+		"precio": "28000"
+	}
+]
