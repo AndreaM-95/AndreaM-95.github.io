@@ -1,4 +1,11 @@
-
+/*TODO || Formulario de pago || */
+.box-cuenta{                            /*Caja del formulario*/
+    align-items: center;
+    display: flex;
+    background: linear-gradient(180grad, #6e62ef, rgb(72, 168, 216));
+    border-radius: 2rem;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
+}
 .titulo-compra{
     font-family: Pacifico, cursive;
     font-size: 2.3rem;
@@ -8,89 +15,75 @@
     text-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
     color: #F99E77;
 }
-.box-cuenta{
-    align-items: center;
-    display: flex;
-    background: linear-gradient(180grad, #6e62ef, rgb(72, 168, 216));
-    border-radius: 2rem;
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
-}
-#procesar-pago{    
+
+/*TODO || Tabla de datos || */
+#procesar-pago{                     /*Caja de los datos*/
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.datos-user{
+.datos-user{                        /*Caja de datos (Nombre / email)*/
     width: 90%;
     margin: .5rem 0 .5rem 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 3rem;
-    color: #fff;
-    
+    color: #fff;  
     text-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
-
 }
-
-.label{
+.label{                             /*Datos*/
     font-size: 1.2rem;
     font-weight: 600;
     width: 20%;
     margin: 0;
     padding: 0;
-   
 }
-
-.input{
+.input{                             /*Espacio de digitación*/
     width: 80%;
     height: 2rem;
     margin: 0;
 }
-.tabla-box{
+
+/*TODO || Tabla de productos || */
+.tabla-box{                             /*Caja de productos*/
     width: 70%;
     background: rgb(236, 232, 232);
 }
- .table{
+#lista-compra{                                 /*Cuerpo de la tabla*/
     border: solid black;
+    margin: 0;
+    width: 100%;
 }
-.fila-box{
+.fila-box{                              /*Fila de títulos*/     
     width: 16%;
     background-color: #0B7C83;
     color: #fff;
-    
 }
-
-.fila-dato{
- 
+.fila-dato{                             /*Filas de de datos de los productos*/
     border: solid black;
     text-align: center;
-    
     font-size: 1.1rem;
 }
-
-
-.fila-suma{
+.fila-suma{                             /*Filas del cálculo de la suma de los precios*/
     border: solid black;
     text-align: center;
-
 }
 
-#total{
+#total{                                 /*Input de la suma total*/
     background: rgb(236, 232, 232);
-
     text-align: center;
     font-weight: 600;
 }
 
+/*TODO || Botones y Gif || */
 .botones-box{
     display: flex;
     justify-content:space-between;
     margin-bottom: 1rem;
     width: 70%;
 }
-
 .box-btn{
     align-items: center;
     width: 30%;
@@ -98,8 +91,6 @@
     justify-content: space-around;
     margin: 0;
 }
-
-
 .btn-compra{
     cursor:pointer;
     background:#2EE1D4;
@@ -121,12 +112,7 @@
     transform:scale(1.1);
 	cursor: pointer;
 }
-
 #cargando{
     border-radius: 1rem;
     margin-top: 1rem;
-}
-
-#lista-compra{
-    margin: 0;
 }

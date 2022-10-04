@@ -1,30 +1,8 @@
-.titulo{
-    font-family: Pacifico, cursive;
-    color:#fdfdfd;
-    text-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
-
-}
-
-.lead{
-    font-weight: 600;
-    font-family: Pacifico, cursive;
-    text-decoration: underline rgb(23, 169, 177);
-    
-}
-
-#lista-productos{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-
-
+/*TODO || Barra de navegación || */
 .panel{
     background:#1196a0;
     height: 4.5rem;
 }
-
 .slogan{
     background:#B4EAEC;
     border:none;
@@ -36,7 +14,19 @@
     height: 2.5rem;
     font-family: 1.2rem;
 }
-
+.table{                     /*Tabla carrito de compras*/
+    width: 350px;
+    text-align: center;
+}
+.carro:hover{               /*Imágen del carrito de compras*/
+    border-radius: 1rem;
+    transform:scale(1.1);
+    cursor: pointer;
+    background:#B4EAEC;
+}
+.btn-carro{                 /*Botones del carrito de compras*/
+    margin-left: 1rem;
+}
 .btn-salir{
     margin: 0 2.5rem 0 0;
     border-radius: 1rem;
@@ -57,21 +47,25 @@
     cursor: pointer;
 }
 
-.carro:hover{
-    border-radius: 1rem;
-    transform:scale(1.1);
-    cursor: pointer;
-    background:#B4EAEC;
-
-}
-
-.my-0{
-    color: #F0FEFF;
+/*TODO || Titulo y subtítulo || */
+.titulo{
+    font-family: Pacifico, cursive;
+    color:#fdfdfd;
     text-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
-
+}
+.lead{
+    font-weight: 600;
+    font-family: Pacifico, cursive;
+    text-decoration: underline rgb(23, 169, 177); 
 }
 
-.img-card{
+/*TODO || Productos || */
+#lista-productos{                           /*Contenedor de todos los productos*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.img-card{                                  /*Caja de un producto*/
     width: 30%;
     text-align: center;
     padding-bottom: 1rem;
@@ -80,19 +74,20 @@
     border-radius: .4rem .4rem 2rem 2rem;
     margin-bottom: 1rem;
 }
-
-.contenedor{
-    align-items: center;
-
-    display: flex;
-    flex-direction: column;
-}
-
 .titulo-producto{
+    color: #F0FEFF;
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
     background: linear-gradient(180grad, #6e62ef, rgb(72, 168, 216));
     margin-bottom: .5rem;
 }
-
+.contenedor{                                /*Caja de imágen y descripción*/
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.precio{
+    font-weight: 600;
+}
 .agregar-carrito:hover{
     background: linear-gradient(180grad, #6e62ef, rgb(72, 168, 216));
     color: aliceblue;
@@ -100,18 +95,4 @@
     box-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
     transform:scale(1.1);
 	cursor: pointer;
-}
-
-.precio{
-    font-weight: 600;
-}
-
-
-.table{
-    width: 350px;
-    text-align: center;
-}
-
-.btn-carro{
-    margin-left: 1rem;
 }

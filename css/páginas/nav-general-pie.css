@@ -7,6 +7,7 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+/*TODO || Panel de navegación || */
 .navbar{
     width: 100%;
     justify-content: flex-end;
@@ -31,6 +32,7 @@ body{
 	cursor: pointer;
 }
 
+/*TODO || Cuerpo || */
 .titulo_principal{
     font-family: Pacifico, cursive;
     color:#fdfdfd;
@@ -51,5 +53,4 @@ body{
 .rodapie-texto{
     font-weight: 600;
     line-height: 1.3rem;
-
 }

@@ -1,0 +1,107 @@
+/*TODO || LOGIN || */
+@media (min-width:320px) and (max-width:1200px){/*Teléfonos*/
+    /*todo || Caja del contenedor del formulario || */
+    .di{
+        padding: 0 2rem 0 2rem;
+    }
+    .form-box{
+        width: 100%;
+        margin: 0;
+    }
+    .texto{
+        font-size: 1.2rem;
+    }
+    .info{
+        font-size: 1.1rem;
+    }
+    .dato{
+        font-size: 1.1rem;
+    }
+    .btn-login{
+        width: 50%;
+        margin-left: 25%;
+        font-size: 1.1rem;
+        height: 2.2rem;
+    }
+    .navbar{
+        justify-content: end;
+        display: flex;
+    }
+    .btn-ingresar, .btn-registrar{
+        margin: 0;
+        font-size: 1.1rem;
+    }
+    .btn-ingresar,.btn-registrar{
+        margin-right: 1rem;
+    }
+   
+    .rodapie-img{
+        width: 25%;
+    }
+    .rodapie-texto{
+        font-size: .8rem;
+    }
+    .burbuja{
+        animation: none;
+        opacity: 0;
+    }
+}
+
+/*TODO || REGISTRO || */
+@media (min-width:320px) and (max-width:576px){/*Teléfonos*/
+    
+    .di{                        /*Caja del contenedor principal*/
+        display: block;
+        padding: 0 1rem 0 1rem;
+    }
+    .titulo_principal{
+        margin-top: 1.5rem;
+        font-size: 2rem;
+    }
+    #formulario-box{            /*Caja del contenedor del formulario*/
+        width: 100%;
+    }
+    
+    .banner_img{                /*Imágen banner*/
+        display: none;
+    }
+    .datos{
+        font-size: 1rem;
+        height: 2rem;
+    }
+    .btn{
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width:577px) and (max-width:768px){  /*Tablets*/
+    .rodapie-img{
+        width: 15%;
+    }
+    .rodapie-texto{
+        font-size: 1rem;
+    }
+    .banner_img{                /*Imágen banner*/
+        width: 40%;
+        align-items: center;
+        padding-left: 2rem;
+    }
+    #formulario-box{
+        margin-left: 2rem;
+    }
+    .titulo_principal{
+        font-size: 2.5rem;
+        margin: 1rem 0 1rem 0;
+    }
+
+    .banner_img img{                /*Imágen banner*/
+        width: 40%;
+        width: 300px;
+        height: 300px;
+    }
+    .navbar{
+        justify-content: end;
+        display: flex;
+    }
+    
+}
