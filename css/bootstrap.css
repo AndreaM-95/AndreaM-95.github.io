@@ -544,7 +544,7 @@ pre code {
   max-height: 340px;
   overflow-y: scroll;
 }
-
+/*
 .container {
   width: 100%;
   padding-right: 15px;
@@ -576,7 +576,7 @@ pre code {
     max-width: 1140px;
   }
 }
-
+*/
 .container-fluid {
   width: 100%;
   padding-right: 15px;

@@ -2,37 +2,108 @@
     .navbar{
         justify-content: space-between;
     }
-
     .container{
         width: 95%;
     }
+    .titulo-compra, #procesar-pago, #lista-compra, .col, .botones-box{
+        width: 100%;
+    }
     .titulo-compra{
-        width: 70%;
         font-size: 1.5rem;
         margin: 0;
     }
     .datos-user{
-        margin-top: 1rem;
-    }
-    
+        margin-bottom: 1.5rem;
+    } 
     #procesar-pago{
-        width: 75%;
         align-items: center;
-        margin-top: 1rem;
+        margin: 1rem 0 1rem 0;
     }
     .label{
-        width: 50%;
+        width: 40%;
         font-size: 1rem;
         padding: 1rem;
         text-align: center;
     }
     .form-control{
-        width: 90%;
+        width: 80%;
     }
     #lista-compra{
-        width: 100%;
+        font-size: .8rem;
+    }  
+    .fila-dato{
+        font-size: .8rem;
+        width: auto;
+        height: 1.5rem;
+    }
+    #cargando{
+        display: none;
+    }
+    .botones-box{
+        padding: 1rem;
+        justify-content: space-around;
+    }
+    .box-btn{
+        width: 50%;
+    }
+    .btn-compra{
+        width: 80%;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .rodapie-img{
+        width: 16%;
     }
 }
 
 @media (min-width:577px) and (max-width:768px){  /*Tablets*/
+    .col, .titulo-compra, #procesar-pago,#lista-compra,.botones-box,.btn-compra,#cargando, .container{
+        width: 100%;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+    .titulo-compra{
+        font-size: 1.8rem;
+        margin: 0 0 1rem 0;
+    }
+    .label{
+        width: 40%;
+        font-size: 1rem;
+        padding: 1rem;
+        text-align: center;
+    }
+    .form-control{
+        width: 80%;
+    }
+    #procesar-pago{
+        align-items: center;
+        margin: 1rem 0 1rem 0;
+    }
+    #lista-compra{
+        font-size: .8rem;
+    }
+    .fila-dato{
+        font-size: .8rem;
+        width: auto;
+        height: 1.5rem;
+    }
+    .botones-box{
+        padding: 1rem;
+        justify-content: space-around;
+    }
+    .box-btn{
+        width: 32%;
+    }
+    #loaders{
+        width: 30%;
+    }
+    .btn-compra{
+        font-size: 1rem;
+        text-align: center;
+        height: 3.5rem;
+    }
+    .rodapie-img{
+        width: 16%;
+    }
 }
