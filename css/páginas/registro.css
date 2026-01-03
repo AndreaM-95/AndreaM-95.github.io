@@ -8,36 +8,49 @@
     width: 50%;
 }
 
+.titulo{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
 /*todo || Caja del formulario || */
 .form-box{
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    margin: 2rem auto;
     border: black solid;
     border-radius: 2rem;
     align-items: center;
     background: #68cbe9;
+    width: 80%;
+    padding: 2rem;
 }
 
 /*todo || Label || */
 .info{
-    text-align: center;
-    font-size: 1.2rem;
-    padding: .5rem 0 .5rem 0;
     font-weight: 600;
-}
-
-/*todo || Input || */
-.datos{
     width: 90%;
-    border-radius: 2rem;
-    height: 3rem;
-    border: none;
-    padding: .5rem 1rem .5rem 1rem;
-    font-size: 1.1rem;
 }
 
-/*todo || Botón || */
+/* || Input || */
+.datos{
+    padding: .5rem;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    border: none;
+    width: 90%;
+}
+
+.link-registrar{
+    font-size: smaller;
+    color: #0B7C83;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+}
+
 .btn{
     margin: 1rem 0 1rem 0;
     font-size: 1.2rem;
@@ -50,7 +63,6 @@
     color: aliceblue;
     font-weight: 600;
     box-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
-    transform:scale(1.1);
 	cursor: pointer;
 }
 
@@ -62,6 +74,7 @@
 }
 .banner_img img{
     animation: movimiento 3s  infinite;
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
+    margin: auto;
 }

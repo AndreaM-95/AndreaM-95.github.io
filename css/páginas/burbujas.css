@@ -12,31 +12,31 @@
     height: 80px;
     left: 5%;
     animation-duration: 3s;
-    animation-delay: 3s;
+    /* animation-delay: 3s; */
 }
 
 .burbuja:nth-child(2){
     width: 100px;
     height: 100px;
     left: 35%;
-    animation-duration: 3s;
-    animation-delay: 5s;
+    animation-duration: 4s;
+    /* animation-delay: 5s; */
 }
 
 .burbuja:nth-child(3){
     width: 20px;
     height: 20px;
     left: 15%;
-    animation-duration: 1.5s;
-    animation-delay: 7s;
+    animation-duration: 6s;
+    /* animation-delay: 7s; */
 }
 
 .burbuja:nth-child(4){
     width: 50px;
     height: 50px;
     left: 10%;
-    animation-duration: 6s;
-    animation-delay: 3s;
+    animation-duration: 5s;
+    /* animation-delay: 3s; */
 }
 
 .burbuja:nth-child(5){
@@ -44,7 +44,7 @@
     height: 70px;
     left: 65%;
     animation-duration: 3s;
-    animation-delay: 1s;
+    /* animation-delay: 1s; */
 }
 
 .burbuja:nth-child(6){
@@ -52,7 +52,7 @@
     height: 20px;
     left: 50%;
     animation-duration: 4s;
-    animation-delay: 5s;
+    /* animation-delay: 5s; */
 }
 
 .burbuja:nth-child(7){
@@ -60,7 +60,7 @@
     height: 20px;
     left: 50%;
     animation-duration: 4s;
-    animation-delay: 5s;
+    /* animation-delay: 5s; */
 }
 
 .burbuja:nth-child(8){
@@ -69,22 +69,6 @@
     left: 52%;
     animation-duration: 5s;
     animation-delay: 5s;
-}
-
-.burbuja:nth-child(9){
-    width: 65px;
-    height: 65px;
-    left: 51%;
-    animation-duration: 3s;
-    animation-delay: 2s;
-}
-
-.burbuja:nth-child(10){
-    width: 40px;
-    height: 40px;
-    left: 35%;
-    animation-duration: 3s;
-    animation-delay: 4s;
 }
 
 

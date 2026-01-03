@@ -7,7 +7,7 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-/*TODO || Panel de navegación || */
+/* || Panel de navegación || */
 .navbar{
     width: 100%;
     justify-content: flex-end;
@@ -32,13 +32,14 @@ body{
 	cursor: pointer;
 }
 
-/*TODO || Cuerpo || */
+/* || Cuerpo || */
 .titulo_principal{
     font-family: Pacifico, cursive;
     color:#fdfdfd;
     text-align: center;
     font-size: 3rem;
     text-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
+    margin-top: 2rem;
 }
 
 #rodapie{
@@ -48,9 +49,11 @@ body{
     padding-bottom: .5rem;
 }
 .rodapie-img{
-    width: 8%;
+    width: 7%;
 }
 .rodapie-texto{
     font-weight: 600;
-    line-height: 1.3rem;
+    line-height: 1.5rem;
+    font-size: small;
+    margin: 0;
 }
