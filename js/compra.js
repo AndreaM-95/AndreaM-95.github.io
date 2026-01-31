@@ -61,9 +61,7 @@ function procesarCompra(e) {
             confirmButtonColor: '#0B7C83',
         })
     }
-    
 }
-
 
 function generarTabla(productosLS) {
     let div = document.createElement("div");

@@ -1,11 +1,21 @@
-/*todo || Caja del contenedor principal || */
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* || Caja del contenedor principal || */
 .di{
     align-items: center;
     display: flex;
     flex-direction: column;
 }
 
-/*todo || Caja del contenedor del formulario || */
+/* || Caja del contenedor del formulario || */
 .form-box{
     width: 40%;
     border: solid black;
@@ -17,7 +27,7 @@
     background: #68cbe9;
 }
 
-/*todo || Saludo || */
+/* || Saludo || */
 .texto{
     font-size: 1.5rem;
     text-align: center;

@@ -3,7 +3,7 @@
     border-radius: 50%;
     background: white;
     position: absolute;
-    bottom: -150;
+    /* bottom: -150; */
     animation: burbujas 3s linear infinite ;
 }
 

@@ -1,10 +1,16 @@
 body{
-    background: linear-gradient(180grad, #7CD5F0, rgb(238, 240, 241));
+    background: #b2ebfc;
     width: 100%;
     margin: 0;
     padding: 0;
     border: 0;
     font-family: 'Montserrat', sans-serif;
+    /* height: 100vh; */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
 }
 
 /* || Panel de navegación || */

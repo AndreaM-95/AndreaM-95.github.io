@@ -1,20 +1,35 @@
-/*TODO || Formulario de pago || */
-.box-cuenta{                            /*Caja del formulario*/
-    align-items: center;
-    display: flex;
-    background: linear-gradient(180grad, #6e62ef, rgb(72, 168, 216));
-    border-radius: 2rem;
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
+main {
+  flex: 1;
+}
+
+/*TODO || Formulario de pago || */
 .titulo-compra{
     font-family: Pacifico, cursive;
     font-size: 2.3rem;
     text-align: center;
     padding-top: 2rem;
     font-weight: 600;
-    text-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
-    color: #F99E77;
+    color: #0B7C83;
+    margin-top: 5rem;
 }
+
+.box-payment{                            /*Caja del formulario*/
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: #68cbe9;
+    border-radius: 2rem;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
+    width: 70%;
+    margin: auto;
+}
+
 
 /*TODO || Tabla de datos || */
 #procesar-pago{                     /*Caja de los datos*/
@@ -22,33 +37,32 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding: 30px 50px;
 }
-.datos-user{                        /*Caja de datos (Nombre / email)*/
-    width: 90%;
-    margin: .5rem 0 .5rem 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 3rem;
-    color: #fff;  
-    text-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
+
+.box-data-user{ /*Caja de datos (Nombre / email)*/
+    width: 100%;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 2fr); /* 3 columnas iguales */
+    gap: 10px; /* Espacio entre celdas */
 }
-.label{                             /*Datos*/
-    font-size: 1.2rem;
+.info-name-user{
+    font-size: 1rem;
     font-weight: 600;
-    width: 20%;
     margin: 0;
     padding: 0;
+    color: #fff;
+    align-content: center;
 }
-.input{                             /*Espacio de digitación*/
-    width: 80%;
+.box-info-user{
     height: 2rem;
     margin: 0;
 }
 
 /*TODO || Tabla de productos || */
 .tabla-box{                             /*Caja de productos*/
-    width: 70%;
+    width: 100%;
     background: rgb(236, 232, 232);
 }
 #lista-compra{                                 /*Cuerpo de la tabla*/
@@ -64,9 +78,12 @@
 .fila-dato{                             /*Filas de de datos de los productos*/
     border: solid black;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 14px;
+    align-content: center;
 }
 .fila-suma{                             /*Filas del cálculo de la suma de los precios*/
+    font-size: 14px;
+    align-content: center;
     border: solid black;
     text-align: center;
 }
@@ -75,44 +92,53 @@
     background: rgb(236, 232, 232);
     text-align: center;
     font-weight: 600;
+    font-size: 14px;
+    align-content: center;
+}
+
+.cantidad{
+    text-align: center;
+    width: 60px;
 }
 
 /*TODO || Botones y Gif || */
 .botones-box{
     display: flex;
-    justify-content:space-between;
-    margin-bottom: 1rem;
-    width: 70%;
+    justify-content:end;
+    margin-top: 1rem;
+    width: 100%;
+    gap: 20px;
 }
-.box-btn{
-    align-items: center;
-    width: 30%;
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
-}
+
 .btn-compra{
-    cursor:pointer;
-    background:#2EE1D4;
-    width: 200px;
-    font-size:1.2rem;
-    border-radius: 1.5rem;
+    background:#0B7C83;
+    width: 170px;
+    font-size:1rem;
+    border-radius: .5rem;
     border: none;
-    height: 3rem;
+    height: 2.5rem;
     padding: .5rem;
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
     text-decoration: none;
-    color: black;
+    color: #fff;
 }
 .btn-compra:hover{
-    background: linear-gradient(180grad, #3FECF3, rgb(101, 110, 114));
-    color: aliceblue;
-    font-weight: 600;
+    background: #074a4f;
     box-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
-    transform:scale(1.1);
+    color: #fff;
 	cursor: pointer;
 }
-#cargando{
-    border-radius: 1rem;
-    margin-top: 1rem;
+
+.borrar-producto{
+    font-size: 20px;
+    text-decoration: none;
+    color: #C82909;
+}
+
+.borrar-producto:hover{
+    color: red;
+}
+
+td{
+    border: solid black;
+    align-content: center;
 }

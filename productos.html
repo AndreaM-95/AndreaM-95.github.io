@@ -19,56 +19,49 @@
         <link rel="stylesheet" href="css/páginas/responsive/res_producto.css">
     </head>
     <body>
-        <header>
-            <div class="container">
-                
-                <nav class="navbar navbar-expand-md fixed-top panel">
-                    <a class="navbar-brand slogan" href="productos.html">Tentación Arte-Sana</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <header class="container">
+            <nav class="navbar navbar-expand-md fixed-top panel">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                    </button>
+                </button>
 
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item dropdown">
-                                <img src="multimedia/imagenes/carrito-de-compra.png" class="nav-link dropdown-toggle img-fluid carro" height="70px"
-                                        width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false"></img>
-                                <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
-                                    <table id="lista-carrito" class="table">
-                                        <thead>
-                                            <tr>
-                                                <th>Imagen</th>
-                                                <th>Nombre</th>
-                                                <th>Precio</th>
-                                                <th></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody></tbody>
-                                    </table>
-    
-                                    <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block btn-carro">Vaciar Carrito</a>
-                                    <a href="#" id="procesar-pedido" class="btn btn-danger btn-block btn-carro">Procesar Compra</a>
+                <section class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <i class="fa-solid fa-cart-shopping nav-link img-fluid btn-carro" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                                    
+                            <section id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                <table id="lista-carrito" class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Imágen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+
+                                <div class="caja-btn-carrito">
+                                    <a href="#" type="button" id="vaciar-carrito" class="btn-vaciar">Vaciar Carrito</a>
+                                    <a href="#" type="button" id="procesar-pedido" class="btn-comprar">Procesar Compra</a>
                                 </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <a href="index.html"><button class="btn-salir">Salir</button></a>
-                </nav>
-                
-            </div>
+                            </section>
+                        </li>
+                    </ul>
+                </section>
+                <a href="index.html"><button class="btn-salir">Salir</button></a>
+            </nav>
         </header>
 
         <main>
-            <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center box-texto">
-                <h1 class="display-4 mt-4 titulo">&#127822; Lista de Productos &#127815;</h1>
-                <p class="lead">Selecciona uno de nuestros productos y accede a un descuento</p>
-            </div>
-    
-            <div class="container" id="lista-productos">
+            <h1 class="titulo">Productos disponibles</h1>
+            <hr>
+
+            <section class="container" id="lista-productos">
                 <div class="img-card">
-                    <div class="card-header titulo-producto"><h4 class="my-0 font-weight-bold">Batido de aguacate</h4></div>
+                    <div class="card-header"><h2 class="titulo-producto">Batido de aguacate</h2></div>
                     <div class="contenedor">
                         <figure>
                             <img src="multimedia/imagenes/BatidoAguacate.jpg" class="card-img-top">
@@ -76,13 +69,16 @@
                                 <p>Preparación para 2 personas que contiene 1 aguacate hass, 2 bananos, 300 ml de leche de almendras, 200gr de avena, 20 gr de aceite de coco.</p>
                             </div>
                         </figure>
-                        <h4 class="card-title pricing-car-title precio">COP. $<span class="">8000</span></h4>
-                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1" onclick="sonido.play()">Comprar</a>
+
+                        <div class="box-info-product">
+                            <p class="card-title pricing-car-title precio">COP. $<span class="">8000</span></p>
+                            <a href="" type="button" class="btn-add" data-id="1" onclick="sonido.play()">Comprar</a>
+                        </div>
                     </div>
                 </div>
     
                 <div class="img-card">
-                    <div class="card-header titulo-producto"><h4 class="my-0 font-weight-bold">Batido de fresa</h4></div>
+                    <div class="card-header"><h2 class="titulo-producto">Batido de fresa</h2></div>
                     <div class="contenedor">
                         <figure>
                             <img src="multimedia/imagenes/BatidoFresa.jpg" class="card-img-top">
@@ -90,13 +86,16 @@
                                 <p>Preparación para 2 personas que contiene 300gr de fresas, 2 bananos, 300 ml de leche de almendras, 200gr de avena, 20 gr de aceite de coco.</p>
                             </div>
                         </figure>
-                        <h4 class="card-title pricing-car-title precio">COP. $<span class="">10000</span></h4>
-                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2" onclick="sonido.play()">Comprar</a>
+
+                        <div class="box-info-product">
+                            <p class="card-title pricing-car-title precio">COP. $<span class="">10000</span></p>
+                            <a href="" type="button" class="btn-add" data-id="2" onclick="sonido.play()">Comprar</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="img-card">
-                    <div class="card-header titulo-producto"><h4 class="my-0 font-weight-bold">Batido verde</h4></div>
+                    <div class="card-header"><h2 class="titulo-producto">Batido verde</h2></div>
                     <div class="contenedor">
                         <figure>
                             <img src="multimedia/imagenes/batidoVerde.jpg" class="card-img-top">
@@ -104,13 +103,16 @@
                                 <p>Preparación para 2 personas que contiene 200gr de apio, 2 pepinos cohómbros, 100gr de espinaca, 1 naranja, 3 limónes y 2 manzanas.</p>
                             </div>
                         </figure>
-                        <h4 class="card-title pricing-car-title precio">COP. $<span class="">6000</span></h4>
-                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3" onclick="sonido.play()">Comprar</a>
+
+                        <div class="box-info-product">
+                            <p class="card-title pricing-car-title precio">COP. $<span class="">6000</span></p>
+                            <a href="" type="button" class="btn-add" data-id="3" onclick="sonido.play()">Comprar</a>
+                        </div>
                     </div>
                 </div>
     
                 <div class="img-card">
-                    <div class="card-header titulo-producto"><h4 class="my-0 font-weight-bold ">Ensalada César</h4></div>
+                    <div class="card-header"><h2 class="titulo-producto">Ensalada César</h2></div>
                     <div class="contenedor">
                         <figure>
                             <img src="multimedia/imagenes/EnsaladaCesar.jpg">
@@ -118,13 +120,16 @@
                                 <p>Ensalada de lechuga romana y croûtons (trozos de pan tostado) con jugo de limón, aceite de oliva, huevo, salsa Worcestershire, anchoas, ajo, mostaza de Dijon, queso parmesano y pimienta negra. Trozos de pollo es opcional.</p>
                             </div>
                         </figure>
-                        <h4 class="precio">COP. $<span class="">6000</span></h4>
-                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4" onclick="sonido.play()">Comprar</a>
+
+                        <div class="box-info-product">
+                            <p class="precio">COP. $<span class="">6000</span></p>
+                            <a href="" type="button" class="btn-add" data-id="4" onclick="sonido.play()">Comprar</a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="img-card">
-                    <div class="card-header titulo-producto"><h4 class="my-0 font-weight-bold ">Granóla</h4></div>
+                    <div class="card-header"><h2 class="titulo-producto">Granóla</h2></div>
                     <div class="contenedor">
                         <figure>
                             <img src="multimedia/imagenes/granola.jpg">
@@ -132,13 +137,16 @@
                                 <p>Contiene avena, almendras, nueces, macadamia, pistachos, semillas de girasol, linaza, aceite de coco, sirope de arroz, canela molida; frutas deshidratadas como arándanos, coco, uvas. Presentación por 1 kg.</p>
                             </div>
                         </figure>
-                        <h4 class="precio">COP. $<span class="">20000</span></h4>
-                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5"  onclick="sonido.play()">Comprar</a>
+
+                        <div class="box-info-product">
+                            <p class="precio">COP. $<span class="">20000</span></p>
+                            <a href="" type="button" class="btn-add" data-id="5"  onclick="sonido.play()">Comprar</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="img-card">
-                    <div class="card-header titulo-producto"><h4 class="my-0 font-weight-bold ">Mix de frutos secos</h4></div>
+                    <div class="card-header"><h2 class="titulo-producto">Mix de frutos secos</h2></div>
                     <div class="contenedor">
                         <figure>
                             <img src="multimedia/imagenes/mixFrutos.jpg">
@@ -146,13 +154,16 @@
                                 <p>Contiene pistachos, almendras, coco, semillas de girasol, avellanas, maní, fresa y uvas deshidratadas. Presentación por 1 kg.</p>
                             </div>
                         </figure>
-                        <h4 class="precio">COP. $<span class="">15000</span></h4>
-                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6"  onclick="sonido.play()">Comprar</a>
+
+                        <div class="box-info-product">
+                            <p class="precio">COP. $<span class="">15000</span></p>
+                            <a href="" type="button" class="btn-add" data-id="6"  onclick="sonido.play()">Comprar</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="img-card">
-                    <div class="card-header titulo-producto"><h4 class="my-0 font-weight-bold ">Aceite de coco</h4></div>
+                    <div class="card-header"><h2 class="titulo-producto">Aceite de coco</h2></div>
                     <div class="contenedor">
                         <figure>
                             <img src="multimedia/imagenes/aceiteCoco.jpg">
@@ -160,13 +171,16 @@
                                 <p>1 litro de aceite de coco extravirgen prensado en frío y 100% colombiano. Aporta a la piel ácido láurico que es antibacteriano y antiinflamatorio; también es muy rico en nutrientes como ácidos grasos omega-6, y ácido linoleico.</p>
                             </div>
                         </figure>
-                        <h4 class="precio">COP. $<span class="">18000</span></h4>
-                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="7"  onclick="sonido.play()">Comprar</a>
+
+                        <div class="box-info-product">
+                            <p class="precio">COP. $<span class="">18000</span></p>
+                            <a href="" type="button" class="btn-add" data-id="7"  onclick="sonido.play()">Comprar</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="img-card">
-                    <div class="card-header titulo-producto"><h4 class="my-0 font-weight-bold ">Aceite de aguacate</h4></div>
+                    <div class="card-header"><h2 class="titulo-producto">Aceite de aguacate</h2></div>
                     <div class="contenedor">
                         <figure>
                             <img src="multimedia/imagenes/aceiteAguacate.jpg">
@@ -174,13 +188,16 @@
                                 <p>1 litro de aceite de aguacate 100% colombiano. Es rico en grasas insaturadas (Omega 6 y Omega 9). Tiene un importante aporte de ácido oleico, mejora la salud del corazón, favoreciendo la presión arterial y los niveles de colesterol en sangre.</p>
                             </div>
                         </figure>
-                        <h4 class="precio">COP. $<span class="">23000</span></h4>
-                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="8">Comprar</a>
+
+                        <div class="box-info-product">
+                            <p class="precio">COP. $<span class="">23000</span></p>
+                            <a href="" type="button" class="btn-add" data-id="8">Comprar</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="img-card">
-                    <div class="card-header titulo-producto"><h4 class="my-0 font-weight-bold ">Sirope de agave</h4></div>
+                    <div class="card-header"><h2 class="titulo-producto">Sirope de agave</h2></div>
                     <div class="contenedor">
                         <figure>
                             <img src="multimedia/imagenes/sirope.jpg">
@@ -188,11 +205,14 @@
                                 <p>Viene en presentación de 1 litro. Ayuda a reducir los niveles de glucosa en sangre, mejora la absorción de calcio y ayuda a combatir enfermedades como la osteoporosis.</p>
                             </div>
                         </figure>
-                        <h4 class="precio">COP. $<span class="">28000</span></h4>
-                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="9" onclick="sonido.play()">Comprar</a>
+
+                        <div class="box-info-product">
+                            <p class="precio">COP. $<span class="">28000</span></p>
+                            <a href="" type="button" class="btn-add" data-id="9" onclick="sonido.play()">Comprar</a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </main>
 
         <footer id="rodapie">
@@ -201,7 +221,7 @@
             <p class="rodapie-texto"><strong>&copy Copyright</strong></p>
         </footer>
 
-        <button class="btn-scrolltop " id="btn_scrolltop" onclick="sonido.play()">
+        <button class="btn-scrolltop" id="btn_scrolltop" onclick="sonido.play()">
             <i class="fa-solid fa-circle-arrow-up"></i>
         </button>
 

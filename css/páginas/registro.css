@@ -1,10 +1,23 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
 /*todo || Caja del contenedor principal || */
 .di{
     display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 /*todo || Caja del contenedor del formulario || */
 #formulario-box{
+    display: flex;
     width: 50%;
 }
 
@@ -15,8 +28,8 @@
     font-weight: 600;
 }
 
-/*todo || Caja del formulario || */
-.form-box{
+/* || Caja del formulario || */
+.form-box-register{
     display: flex;
     flex-direction: column;
     margin: 2rem auto;
@@ -28,7 +41,7 @@
     padding: 2rem;
 }
 
-/*todo || Label || */
+/* || Label || */
 .info{
     font-weight: 600;
     width: 90%;
@@ -77,4 +90,11 @@
     width: 400px;
     height: 400px;
     margin: auto;
+}
+
+@media (min-width: 1400px) {
+    .form-box-register{
+        width: 65%;
+        padding: 1rem;
+    }
 }

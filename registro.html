@@ -17,33 +17,35 @@
         <link rel="stylesheet" href="css/páginas/burbujas.css">
         <link rel="stylesheet" href="css/páginas/responsive/res_login.css">
     </head>
-    <body>        
-        <section class="di">
-            <div id="formulario-box">
-                <form class="form-box" onsubmit="registroUser()">
-                    <h1 class="titulo">Regístro</h1>
-                    
-                    <label class="info" for="name">Nombre completo</label>
-                    <input id="name" class="datos" type="text" name="name" placeholder="Tu nombre completo aquí..">
+    <body class="layout">     
+        <main>       
+            <section class="di">
+                <section id="formulario-box">
+                    <form class="form-box-register" onsubmit="registroUser()">
+                        <h1 class="titulo">Regístro</h1>
+                        
+                        <label class="info" for="name">Nombre completo</label>
+                        <input id="name" class="datos" type="text" name="name" placeholder="Tu nombre completo aquí..">
 
-                    <label class="info" for="email">Correo electrónico</label>
-                    <input id="email" class="datos" type="email" name="email" placeholder="ejemplo@gmail.com">
+                        <label class="info" for="email">Correo electrónico</label>
+                        <input id="email" class="datos" type="email" name="email" placeholder="ejemplo@gmail.com">
 
-                    <label class="info" for="username"> Usuario</label>
-                    <input id="username" class="datos" type="text" name="username" placeholder="EJ: usuario123">
+                        <label class="info" for="username"> Usuario</label>
+                        <input id="username" class="datos" type="text" name="username" placeholder="EJ: usuario123">
 
-                    <label class="info" for="password">Contraseña</label>
-                    <input id="password" class="datos" type="password" name="password" placeholder="EJ: 1234abcd">
-                    
-                    <a href="index.html" class="link-registrar">¿Ya estás registrad@?, ingresa aquí</a>
+                        <label class="info" for="password">Contraseña</label>
+                        <input id="password" class="datos" type="password" name="password" minlength="6" min="6" placeholder="EJ: 1234abcd">
+                        
+                        <a href="index.html" class="link-registrar">¿Ya estás registrad@?, ingresa aquí</a>
 
-                    <button  type="button" class="btn">Registrarse</button>
-                </form>
-            </div>
-            <div class="banner_img">
-                <img src="multimedia/imagenes/ensalada.png">
-            </div>
-        </section>  
+                        <button  type="button" class="btn">Registrarse</button>
+                    </form>
+                </section>
+                <div class="banner_img">
+                    <img src="multimedia/imagenes/ensalada.png" alt="Ensalada de un mix de verduras">
+                </div>
+            </section>  
+        </main>
         
         <footer id="rodapie">
             <img class="rodapie-img" src="multimedia/imagenes/logo.png">

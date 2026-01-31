@@ -13,7 +13,7 @@ btnIngresar.addEventListener('click', function ingreso(e){
 
     if(registro == null){
         Swal.fire({
-            text:'¡Usuario incorrecto!',
+            text:'¡Datos incorrectos!',
             icon:'warning',
             confirmButtonText: '¡Entendido!',
             timer: 10000,
@@ -27,7 +27,7 @@ btnIngresar.addEventListener('click', function ingreso(e){
         redireccion();
     }else{
         Swal.fire({
-            text:'¡Contraseña incorrecta!',
+            text:'¡Datos incorrectos!',
             icon:'warning',
             confirmButtonText: '¡Entendido!',
             timer: 10000,

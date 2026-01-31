@@ -4,7 +4,7 @@ class Carrito {
     comprarProducto(e){
         e.preventDefault();
         //Si se preciona el btn comprar se adiciona al carrito
-        if(e.target.classList.contains('agregar-carrito')){
+        if(e.target.classList.contains('btn-add')){
             const producto = e.target.parentElement.parentElement;
             //Enviamos el producto seleccionado para tomar sus datos
             this.leerDatosProducto(producto);
@@ -15,7 +15,7 @@ class Carrito {
     leerDatosProducto(producto){
         const infoProducto = {
             imagen : producto.querySelector('img').src,
-            titulo: producto.querySelector('h4').textContent,
+            titulo: producto.querySelector('h2').textContent,
             precio: producto.querySelector('.precio span').textContent,
             id: producto.querySelector('a').getAttribute('data-id'),
             cantidad: 1
@@ -120,12 +120,12 @@ class Carrito {
             const row = document.createElement('tr');
             row.innerHTML = `
                 <td>
-                    <img src="${producto.imagen}" width=100>
+                    <img src="${producto.imagen}" width=80>
                 </td>
                 <td>${producto.titulo}</td>
-                <td>${producto.precio}</td>
+                <td>$${producto.precio}</td>
                 <td>
-                    <a href="#" class="borrar-producto fas fa-times-circle" data-id="${producto.id}"></a>
+                    <a href="#" class="borrar-producto fa-solid fa-trash data-id="${producto.id}"></a>
                 </td>
             `;
             listaProductos.appendChild(row);
@@ -143,13 +143,13 @@ class Carrito {
                     <img src="${producto.imagen}" width=100>
                 </td>
                 <td>${producto.titulo}</td>
-                <td>${producto.precio}</td>
+                <td>$${producto.precio}</td>
                 <td>
                     <input type="number" class="form-control cantidad" min="1" value=${producto.cantidad}>
                 </td>
-                <td id='subtotales'>${producto.precio * producto.cantidad}</td>
+                <td id='subtotales'>$${producto.precio * producto.cantidad}</td>
                 <td>
-                    <a href="#" class="borrar-producto fas fa-times-circle" style="font-size:30px" data-id="${producto.id}"></a>
+                    <a href="#" class="borrar-producto fa-solid fa-trash" data-id="${producto.id}"></a>
                 </td>
             `;
             listaCompra.appendChild(row);

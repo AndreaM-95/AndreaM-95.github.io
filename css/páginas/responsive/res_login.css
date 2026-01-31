@@ -1,4 +1,10 @@
-/*TODO || LOGIN || */
+/* || LOGIN || */
+@media (min-width: 1400px) {
+    .form-box{
+        width: 30%;
+    }
+}
+
 @media (min-width:320px) and (max-width:1200px){/*Teléfonos*/
     /*todo || Caja del contenedor del formulario || */
     .di{

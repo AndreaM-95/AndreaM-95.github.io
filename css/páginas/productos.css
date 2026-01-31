@@ -1,57 +1,91 @@
 /*TODO || Barra de navegación || */
 .panel{
-    background:#1196a0;
-    height: 4.5rem;
+    background: #67c8e6; 
+    padding: 10px 30px;
 }
-.slogan{
-    background:#B4EAEC;
-    border:none;
-    font-weight: 600;  
-    font-family: Pacifico, cursive;
-    margin-left: 2rem;
+
+.btn-inicio, .btn-carro{
+    color: #dff7f8;
+    font-size: 25px;
+}
+
+.btn-inicio:hover, .btn-carro:hover{
+    color:#0B7C83;
+    cursor: pointer;
+}
+
+.btn-salir{
     border-radius: 1rem;
-    padding: 0 .5rem 0 .5rem;
-    height: 2.5rem;
-    font-family: 1.2rem;
+    width: 80px;
+    padding: 10px;
+    background:#dff7f8;
+    border:none;
+    font-weight: 600;
+    font-size: small;
 }
+
+.btn-salir:hover{
+    background:#0B7C83;
+    color: aliceblue;
+    font-weight: 600;
+    cursor: pointer;
+}
+
 .table{                     /*Tabla carrito de compras*/
     width: 350px;
     text-align: center;
 }
-.carro:hover{               /*Imágen del carrito de compras*/
-    border-radius: 1rem;
-    transform:scale(1.1);
+
+.caja-btn-carrito{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+td{
+    align-content: center;
+    font-size: 14px;
+}
+.borrar-producto{
+    color: #C82909;
+    font-size: 18px;
+}
+
+.borrar-producto:hover{
+    color: red;
     cursor: pointer;
-    background:#B4EAEC;
 }
-.btn-carro{                 /*Botones del carrito de compras*/
-    margin-left: 1rem;
-}
-.btn-salir{
-    margin: 0 2.5rem 0 0;
+
+.btn-vaciar, .btn-comprar{
+    text-align: center;
+    color: black;
     border-radius: 1rem;
-    width: 6rem;
-    height: 3rem;
-    background:#B4EAEC;
+    width: 40%;
+    padding: 10px;
     border:none;
     font-weight: 600;
-    font-size: 1.3rem;
-    
+    font-size: small;
+    text-decoration: none;
 }
-.btn-salir:hover, .slogan:hover{
-    background: linear-gradient(180grad, #6e62ef, rgb(72, 168, 216));
-    color: aliceblue;
-    font-weight: 600;
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
-    transform:scale(1.1);
-    cursor: pointer;
+
+.btn-vaciar{
+    background:#dff7f8;
+}
+.btn-comprar{
+    background:#6feb94;
+}
+
+.btn-vaciar:hover, .btn-comprar:hover{
+    background:#0B7C83;
+    color: white;
 }
 
 /*TODO || Titulo y subtítulo || */
 .titulo{
     font-family: Pacifico, cursive;
-    color:#fdfdfd;
-    text-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
+    color:#0B7C83;
+    /* text-shadow: 2px 5px 5px rgba(0, 0, 0, .6); */
+    margin-top: 5rem;
+    text-align: center;
 }
 .lead{
     font-weight: 600;
@@ -61,38 +95,79 @@
 
 /*TODO || Productos || */
 #lista-productos{                           /*Contenedor de todos los productos*/
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 4fr));
+    gap: 1rem;
 }
+
 .img-card{                                  /*Caja de un producto*/
-    width: 30%;
     text-align: center;
-    padding-bottom: 1rem;
-    border: solid #0B7C83;
     background: #F0FEFF;
-    border-radius: .4rem .4rem 2rem 2rem;
-    margin-bottom: 1rem;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.card-header{
+    background:#0B7C83;
+    padding: 10px 0;
 }
 .titulo-producto{
+    font-size: 18px;
+    font-weight: 600;
     color: #F0FEFF;
-    text-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
-    background: linear-gradient(180grad, #6e62ef, rgb(72, 168, 216));
-    margin-bottom: .5rem;
+    padding: 0;
+    margin: 0;
 }
+
 .contenedor{                                /*Caja de imágen y descripción*/
     align-items: center;
     display: flex;
     flex-direction: column;
 }
+
+.box-info-product{ /*Caja de datos (Nombre / email)*/
+    width: 100%;
+    display: grid;
+    padding: 0 15px;
+    grid-template-columns: repeat(1, 2fr 1fr); /* 3 columnas iguales */
+}
+
 .precio{
+    font-size: medium;
+    font-weight: 600;
+    margin: 0;
+    align-content: center;
+    text-align: start;
+}
+
+.btn-add{
+    border-radius: 10px;
+    width: 100%;
+    background:#0B7C83;
+    color: aliceblue;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
     font-weight: 600;
 }
-.agregar-carrito:hover{
-    background: linear-gradient(180grad, #6e62ef, rgb(72, 168, 216));
+
+.btn-add:hover{
+    background:#197379;
     color: aliceblue;
-    font-weight: 600;
     box-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
-    transform:scale(1.1);
 	cursor: pointer;
+}
+
+@media (min-width: 1400px) {
+    #lista-productos{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    }
+}
+
+a{
+    text-decoration: none;
 }
